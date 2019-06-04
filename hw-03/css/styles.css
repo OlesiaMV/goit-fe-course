@@ -1,0 +1,284 @@
+
+/* единственный правельный вариант html */
+html {
+box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
+  font-family:"Playfair Display", "Arial", serif;
+  color: #626262;
+  font-size: 14px;  
+  line-height: 24px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+
+/* убрать цвета */
+  background-color: #ffffff;
+}
+
+.page-header {
+  background-color: #ffffff;
+}
+
+/* для картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-nav {
+  padding: 78px 0 104px;
+}
+
+.site-navigation {
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0; 
+  vertical-align: middle;
+  margin-left: 164px;
+}
+  
+.site-navigation li {
+  display: inline-block;
+margin-right: 104px;
+}
+
+/*.site-navigation li:last-child {
+margin-right: 0;
+}
+/*   ИЛИ
+.site-navigation li: not (:last-child) {
+margin-right: 60px;
+{                            */
+
+.site-navigation a {
+  text-align: center;
+  color: #626262;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 30px;
+  }
+
+.site-navigation a:hover,
+/* переключение меню c помощью TAB */
+.site-navigation a:focus {
+  color: #59bcf6;
+}
+
+
+
+.one-list {
+  list-style: none;
+  /*убирают зазоры, которые стоят по умолчанию */
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.one-list-item {
+  /* ставит все элементы секции в одну линию */
+  display: inline-block;
+  /* ширина одного элемента секции */
+  width: 420px;
+  /*зазор между элемннтами, которые входят в секцию */
+  margin-right: 60px;
+  
+}
+
+.one-list-item:nth-child(2n) {
+margin-right: 0;
+}
+
+/* last для примера формулы, если элементов много */
+.one-list-item:nth-last-child(-n + 2n) {
+  visibility: 0;
+}
+
+.one-list-item h3 {
+  /* цвет шрифта*/
+  color: #dbd8d1;
+  /* расстояние между h3 и h4 (или p (текстом) */
+  margin-bottom: 24px;
+  /* размер шрифта 14х1.2=16.8 ~ 17px */
+  /* учитывает межстрочный интервал */
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.one-list-item h4 {
+  /* расстояние между h4 и p (текстом) */
+  margin-top: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.one-list-item p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+.two-list {
+  list-style: none;
+  /*убирают зазоры, которые стоят по умолчанию */
+  /* Первое значение задает поле от верхнего края, второе — одновременно от левого и правого края, а третье — от нижнего края.*/
+  padding: 132px 0 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.two-list-item {
+  /* ставит все элементы секции в одну линию */
+  display: inline-block;
+  /* ширина одного элемента секции */
+  width: 420px;
+  /*зазор между элемннтами, которые входят в секцию */
+  margin-right: 60px;
+}
+
+.two-list-item:nth-child(2n) {
+margin-right: 0;
+}
+
+/* last для примера формулы, если элементов много */
+.two-list-item:nth-last-child(-n + 2n) {
+  visibility: 0;
+}
+
+.two-list-item h3 {
+  /* цвет шрифта*/
+  color: #dbd8d1;
+  /* расстояние между h3 и h4 (или p (текстом) */
+  margin-bottom: 24px;
+  /* размер шрифта 14х1.2=16.8 ~ 17px */
+  /* учитывает межстрочный интервал */
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.two-list-item h4 {
+  /* расстояние между h4 и p (текстом) */
+  margin-top: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.two-list-item p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+
+.three-list {
+  list-style: none;
+  /*убирают зазоры, которые стоят по умолчанию */
+  padding: 132px 0 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.three-list-item {
+  /* ставит все элементы секции в одну линию */
+  display: inline-block;
+  /* ширина одного элемента секции */
+  width: 420px;
+  /*зазор между элемннтами, которые входят в секцию */
+  margin-right: 60px;
+}
+
+.three-list-item:nth-child(2n) {
+margin-right: 0;
+}
+
+/* last для примера формулы, если элементов много */
+.three-list-item:nth-last-child(-n + 2n) {
+  visibility: 0;
+}
+
+.three-list-item h3 {
+  /* цвет шрифта*/
+  color: #dbd8d1;
+  /* расстояние между h3 и h4 (или p (текстом) */
+  margin-bottom: 24px;
+  /* размер шрифта 14х1.2=16.8 ~ 17px */
+  /* учитывает межстрочный интервал */
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.three-list-item h4 {
+  /* расстояние между h4 и p (текстом) */
+  margin-top: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.three-list-item p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.load {
+  text-align: center;
+  padding: 84px 0 100px;
+}
+
+.load-button {
+border: none;
+margin: 0;
+padding: 0;
+width: 164px;
+height: 60px;
+font-size: 20px;
+background-color: #ffffff;
+border: 1px solid #626262; /* Параметры рамки */
+font-weight: 400;
+cursor: pointer;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[typa="radio"].visually-hidden {
+  position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding:0;
+
+white-space: nowrap;
+
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+
