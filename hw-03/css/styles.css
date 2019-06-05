@@ -103,7 +103,7 @@ margin-right: 0;
 }
 
 /* last для примера формулы, если элементов много */
-.one-list-item:nth-last-child(-n +2n) {
+.one-list-item:nth-last-child(-n+2n) {
   visibility: 0;
 }
 
@@ -158,7 +158,7 @@ margin-right: 0;
 }
 
 /* last для примера формулы, если элементов много */
-.two-list-item:nth-last-child(-n +2n) {
+.two-list-item:nth-last-child(- n + 2n) {
   visibility: 0;
 }
 
