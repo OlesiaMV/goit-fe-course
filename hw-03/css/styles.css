@@ -163,12 +163,12 @@ margin-right: 0;
   margin-right: 60px;
 }
 
-.two-list-lifestyle {
+.two-list-fotodiarygit {
   margin: 0;
   margin-bottom: 20px;
 }
 
-.otwo-list-title {
+.two-list-title {
   margin: 0;
   margin-bottom: 30px;
 }
@@ -246,7 +246,7 @@ margin-right: 0;
 }
 
 /* last для примера формулы, если элементов много */
-.three-list-item:nth-last-child(-n +2n) {
+.three-list-item:nth-last-child(-n + 2n) {
   visibility: 0;
 }
 
