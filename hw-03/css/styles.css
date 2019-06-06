@@ -38,16 +38,14 @@ img {
 
 .page-nav {
   padding: 78px 0 104px;
+  text-align: center;
 }
 
 .site-navigation {
-  display: inline-block;
   list-style: none;
-  font-size: 16px;
   margin: 0;
   padding: 0; 
   vertical-align: middle;
-  margin-left: 164px;
 }
   
 .site-navigation li {
@@ -70,6 +68,8 @@ margin-right: 60px;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 30px;
+  display: block;
+  font-size: 14px;
   }
 
 .site-navigation a:hover,
@@ -77,8 +77,6 @@ margin-right: 60px;
 .site-navigation a:focus {
   color: #59bcf6;
 }
-
-
 
 .one-list {
   list-style: none;
@@ -95,7 +93,20 @@ margin-right: 60px;
   width: 420px;
   /*зазор между элемннтами, которые входят в секцию */
   margin-right: 60px;
-  
+}
+
+.one-list-lifestyle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.one-list-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.one-list-section {
+  margin: 0;
 }
 
 .one-list-item:nth-child(2n) {
@@ -103,6 +114,7 @@ margin-right: 0;
 }
 
 /* last для примера формулы, если элементов много */
+/* уточнить, как правильно записывать формулы */
 .one-list-item:nth-last-child(-n+2n) {
   visibility: 0;
 }
@@ -118,12 +130,11 @@ margin-right: 0;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 30px;
+  
 }
 
 .one-list-item h4 {
   /* расстояние между h4 и p (текстом) */
-  margin-top: 30px;
   line-height: 36px;
   font-weight: 400;
   font-size: 30px;
@@ -133,7 +144,6 @@ margin-right: 0;
   font-size: 14px;
   line-height: 24px;
 }
-
 
 .two-list {
   list-style: none;
@@ -151,6 +161,20 @@ margin-right: 0;
   width: 420px;
   /*зазор между элемннтами, которые входят в секцию */
   margin-right: 60px;
+}
+
+.two-list-lifestyle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.otwo-list-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.two-list-section {
+  margin: 0;
 }
 
 .two-list-item:nth-child(2n) {
@@ -173,12 +197,9 @@ margin-right: 0;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 30px;
 }
 
 .two-list-item h4 {
-  /* расстояние между h4 и p (текстом) */
-  margin-top: 30px;
   line-height: 36px;
   font-weight: 400;
   font-size: 30px;
@@ -188,8 +209,6 @@ margin-right: 0;
   font-size: 14px;
   line-height: 24px;
 }
-
-
 
 .three-list {
   list-style: none;
@@ -206,6 +225,20 @@ margin-right: 0;
   width: 420px;
   /*зазор между элемннтами, которые входят в секцию */
   margin-right: 60px;
+}
+
+.three-list-lifestyle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.three-list-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.three-list-section {
+  margin: 0;
 }
 
 .three-list-item:nth-child(2n) {
@@ -228,12 +261,10 @@ margin-right: 0;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 30px;
 }
 
 .three-list-item h4 {
   /* расстояние между h4 и p (текстом) */
-  margin-top: 30px;
   line-height: 36px;
   font-weight: 400;
   font-size: 30px;
