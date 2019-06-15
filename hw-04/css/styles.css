@@ -10,15 +10,16 @@ html {
 
     /* определить и добавить шрифт*/
     .body {
-        font-family: "Open Sans", sans-serif;
         color: #515151;
         font-size: 14px;  
         line-height: 26x;
       }
 
       .container {
-        width: 1170px;
+        width: 1110px;
         margin: 0 auto;
+        font-family: "Open Sans", sans-serif;
+      }  
       
       /* убрать цвета 
         background-color: gray;
@@ -27,7 +28,7 @@ html {
       .page-header {
         background-color:darkorchid;
        */
-      }
+    
       
       img {
         display: block;
@@ -108,14 +109,13 @@ html {
       }
       
       .featured {
-      font-size: 48px;
-      line-height: 32px;
-      font-weight: 900;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 2;
-      margin: o;
-      }
+        font-size: 48px;
+        line-height: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 2;
+        margin: 0;
+     }
 
     .featured::after {
         display: block;
@@ -123,9 +123,7 @@ html {
     background-color: #4ec6ab;
     height: 7px;
     width: 164px;
-    position: absolute;
-    position: relative;
-    left: 505px;
+    margin: 0 auto;
     }
 
 .featured::after {
@@ -138,6 +136,8 @@ html {
           list-style: none;
           font-size: 18px;
           line-height: 32px;
+          margin: 0;
+          padding: 0;
       }
 
       .sections-produkts {
@@ -145,16 +145,16 @@ html {
            /* ширина одного элемента секции */
         width: 250px;
         /*зазор между элемннтами, которые входят в секцию */
-        margin-right: 30px;
+        margin-right: 25px;
         margin-bottom: 54px;
       }
 
       /* используем для виделения какого-то єлемента hover */
       
-      .table-price {
+      .price1 {
         background: linear-gradient(to right, #323232 75%,#8c8c8c 25%);
       }
-      .sections-produkts:hover .table-price {
+      .sections-produkts:hover .price1 {
           background: #4ec6ab;
       }
 
@@ -162,27 +162,23 @@ html {
 
       /* между рядами должно бить 30px */
 
-      .table-price {
+      .price1 {
           width: 250px;
           height: 40px;
        background: linear-gradient(to right, #323232 75%,#8c8c8c 25%);
+       margin: 0;
       }
 
-      .table-price {
-        display: inline-block;
-        line-height: 10px; 
-      }
+      .price2 {
+        margin: 0;
 
-      .price {
-        float: left; 
       }
 
       .sections-produkts::after {
           content: "";
           display: block;
           color: #ffffff;
-          margin-bottom: 30px;
-         
+          margin-bottom: 30px; 
         }
 
         .news {
@@ -257,14 +253,15 @@ html {
     margin-top: 16px;
     }
  
-/*
-   .tekst-news::before { 
-    margin-bottom: 240px;
+
+   .tekst-news {
     margin: 0;
    }
-   */
+   
      
 .news-button {
+  color: #ffffff; 
+  display: block;
   cursor: pointer;
     border: none;
     margin: 0;
@@ -276,12 +273,7 @@ html {
     font-weight: 400;
     margin-top: 14px;
     padding-bottom: 50px;
-    text-align: center;
-
-}
-
-a {
-  color: #ffffff; 
+    text-align: center;   
 }
 
 
