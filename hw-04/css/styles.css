@@ -75,7 +75,6 @@ html {
         margin: 0;
         padding: 0; 
         font-size: 14px;
-        margin-top: 25px;
         }
 
         .site-navigation li {
@@ -115,6 +114,8 @@ html {
         text-transform: uppercase;
         line-height: 2;
         margin: 0;
+        text-align: center;
+        margin-bottom: 104px;
      }
 
     .featured::after {
@@ -126,9 +127,7 @@ html {
     margin: 0 auto;
     }
 
-.featured::after {
-    margin-bottom: 90px;
-}
+
       .sections {
           color: #ffffff;
           text-transform: uppercase;
@@ -149,29 +148,57 @@ html {
         margin-bottom: 54px;
       }
 
+      .sections-produkts:nth-child(4n){
+        margin-right:0;
+        }
+        
+
       /* используем для виделения какого-то єлемента hover */
-      
+      /*
       .price1 {
         background: linear-gradient(to right, #323232 75%,#8c8c8c 25%);
       }
-      .sections-produkts:hover .price1 {
+      .sections-produktsa:hover .price1 {
           background: #4ec6ab;
-      }
+      }*/
 
       /* должен бить блок с названием спава и ценой слева + градиент, знак доллар перед ценой */
 
       /* между рядами должно бить 30px */
 
-      .price1 {
+      .sections-produkts a: {
+        display: block;
+      }
+
+      .sections-produkts a:hover .price1 {
+        background-color: #1abc9c;
+      }
+
+      .sections-produkts a:hover .price2 {
+        background-color: #7fd9c7;
+      }
+
+      
+      /*.price1 {
           width: 250px;
           height: 40px;
        background: linear-gradient(to right, #323232 75%,#8c8c8c 25%);
        margin: 0;
+      }*/
+      .price1 {
+        width: 210px;
+        height: 40px;
+        margin: 0;
+        float: left;
+        background-color: #323232;
       }
 
       .price2 {
         margin: 0;
-
+        width: 40px;
+        height: 40px;
+        background-color: #8c8c8c;
+        float: right;
       }
 
       .sections-produkts::after {
@@ -273,7 +300,8 @@ html {
     font-weight: 400;
     margin-top: 14px;
     padding-bottom: 50px;
-    text-align: center;   
+    text-align: center; 
+    line-height: 50px:  
 }
 
 
