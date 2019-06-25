@@ -71,7 +71,7 @@ img {
   line-height: 17px;
   font-size: 14px;
   display: block;
-  transition: color 0.2s linear;
+  transition: .2s linear;
 }
 
 
@@ -84,23 +84,18 @@ img {
   margin: 0 auto;
   margin-top: 12px;
   opacity: 0;
-  transition: .3s ease-in-out;
+  transition: .2s linear;
   transform: translateY(10px);
 }
 
 .nav-link:hover::after {
   opacity: 1;
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
 .site-navigation a:hover {
   color: #f38181;
 }
-
-.site-navigation a:hover .test::after {
-  opacity: 0;
-}
-
 
 .section-first {
     padding-top: 120px;
@@ -264,7 +259,7 @@ img {
   width: 380px;
   height: 470px;
   opacity: 1;
-  transition: color 0.2s linear;
+  transition: color 6.2s linear;
 }
 
 .our-name:hover .photo-up {
@@ -282,6 +277,8 @@ img {
   z-index: 78;
   opacity: 0;
   background-image: linear-gradient( to top, rgba(252, 227, 138, 0.74) 0%, rgba(243, 129, 129, 0.87) 100%);
+  transition: color 2.2s linear;
+
 }
 
 .our-name:hover .up-effect {
@@ -298,7 +295,7 @@ img {
   width: 55px;
   height: 55px;
   /* background: url("../img/icon_11.png") no-repeat center; */
-  transition: color 0.2s linear;
+  transition:  0.2s linear;
   background-color: #fce38a;
   background-image: url('../img/facebook-logo.png');
   background-repeat: no-repeat; 
@@ -307,7 +304,7 @@ img {
 }
 
 .buttom-up:hover {
-  background-color: #95e1d3;
+  background-color: #95e1d3;  
 }
 
 .buttom-two {
@@ -323,7 +320,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fce38a;
-  transition: color 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .buttom-three {
@@ -336,7 +333,7 @@ img {
   width: 55px;
   height: 55px;
   background: url("../img/pinterest.png");
-  transition: color 0.2s linear;
+  transition: 0.2s linear;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fce38a;
@@ -352,7 +349,7 @@ img {
   width: 55px;
   height: 55px;
   background: url("../img/instagram-social-network-logo-of-photo-camera.png");
-  transition: color 0.2s linear;
+  transition: 0.2s linear;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fce38a;
