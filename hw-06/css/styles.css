@@ -259,7 +259,7 @@ img {
   width: 380px;
   height: 470px;
   opacity: 1;
-  transition: color 6.2s linear;
+  transition: 0.2s linear;
 }
 
 .our-name:hover .photo-up {
@@ -271,13 +271,12 @@ img {
   height: 470px;
   position: absolute;
   background-clip: content-box;
-  transition: color 0.2s linear;
   top: 0;
   left: 0;
   z-index: 78;
   opacity: 0;
   background-image: linear-gradient( to top, rgba(252, 227, 138, 0.74) 0%, rgba(243, 129, 129, 0.87) 100%);
-  transition: color 2.2s linear;
+  transition: 0.2s linear;
 
 }
 
