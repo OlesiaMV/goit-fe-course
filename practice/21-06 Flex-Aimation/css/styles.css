@@ -1,0 +1,353 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300italic - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+       url('../fonts/roboto-v19-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v19-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v19-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v19-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700italic - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+       url('../fonts/roboto-v19-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v19-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --default-font: 'Roboto';
+  --default-font-size: '16px';
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* HEADRE */
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  height: 100px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.nav_link {
+  display: block;
+  font-size: 2rem;
+}
+
+.navigation {
+  flex-basis: 700px;
+  display: flex;
+  /* flex-direction: row;
+    flex-wrap: wrap; */
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Our Team */
+
+.first_title {
+  font-size: 68px;
+  font-weight: 300;
+  margin: 0 0 100px;
+  text-align: center;
+}
+
+.team_list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.team_item {
+  flex-basis: 280px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 20px;
+  transition: .3s ease-in-out 2s;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.team_item:hover {
+    animation: team_item 10s infinite;
+    /* transform: skewY(20deg) */
+ /* transform: rotate(45deg) scale(1.3) skewY(20deg) translateY(10px);
+  */
+}
+
+@keyframes team_item {
+    0% {
+        transform: none;
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: none;
+    }
+
+    75% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.team_item:(:nth-last-of-type(-n + 2)):not(.team_item_vertical) {
+  margin-bottom: 60px;
+}
+
+.team_item_name {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+
+}
+
+.team_item_position {
+  color: grey;
+}
+
+.team_list_vertical {
+  flex-flow: column wrap;
+  height: 900px;
+}
+
+.team_item_vertical {
+  width: 280px;
+}
+
+.team_item_vertical {
+  height: 400px;
+  align-items: center;
+}
+
+/* Boxex */
+
+.box-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.box {
+  height: 200px;
+}
+
+.box:nth-of-type(1) {
+flex-basis: 200px; 
+  flex-grow: 1;
+  background-color: aqua;
+}
+
+.box:nth-of-type(2) {
+ flex-basis: 250px; 
+  flex-grow: 1;
+  background-color: blueviolet;
+}
+
+.box:nth-of-type(3) {
+ flex-basis: 150px; 
+  flex-grow: 2;
+  background-color: brown;
+}
+
+.rocket {
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: url('../img/rocket.png');
+    background-size: contain;
+    animation: rocket 12s linear;
+    animation-delay: 2s;
+}
+
+@keyframes rocket {
+    0% {
+        transform:  translate(-50%, -50%);
+    }
+
+ 10% {
+        transform: translate(-50%, -45%);
+    }
+
+    20% {
+        transform: translate(-50%, -50%);
+    }
+
+    22% {
+        transform: translate(-50%, -55%);
+    }
+
+    24% {
+        transform:  translate(-50%, -50%);
+    }
+    26% {
+        transform: translate(-50%, -45%);
+    }
+    28% {
+        transform: translate(-50%, -50%);
+    }
+    30% {
+        transform: translate(-50%, -55%);
+    }
+
+    40% {
+        transform: translate(-50%, -50%);
+        }
+    60% {
+            transform: translate(-50%, -50%) rotate(45deg);
+            }
+    100% {
+            transform: translate(10000px, -10000px) rotate(45deg);
+                }   
+}
+
+/* vw & vh */
+
+.row {
+  display: flex;
+}
+
+.col {
+  height: 100hv;
+}
+
+.col:nth-of-type(1) {
+width: 30vw;
+background: fuchsia;
+}
+
+.col:nth-of-type(2) {
+  width: 70vw;
+  background:darkcyan ;
+  }
+
+  .text-section h2 {
+    font-size: 10vw;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  td, th {
+    padding: 10px 20px;
+  }
+
+  table thead {
+    background: skyblue;
+    border: 2px solid teal;
+  }
+
+  .table tbody {
+    background: gold;
+  }
+
+.table tbody td {
+  border: 2px solid goldenrod;
+}
+
+
+/* 
+    Form
+*/
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+.form button {
+  margin-top: 60px;
+}
+
+input:focus:valid {
+  border: 2px solid green;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+.inputs__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 65%;
+  justify-content: space-between;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form__wrapper textarea {
+  flex-basis: 30%;
+}

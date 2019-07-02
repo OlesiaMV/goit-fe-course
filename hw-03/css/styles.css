@@ -119,12 +119,18 @@ margin-right: 60px;
   margin: 0;
 }
 
+/*.one-list-section:nth-last-child(-n+2) {
+  margin-bottom: 120px;
+}
+*/
 
 .one-list-item:nth-child(2n) {
 margin-right: 0;
 }
 
-/* last для примера формулы, если элементов много */
+
+
+  /* last для примера формулы, если элементов много */
 /* уточнить, как правильно записывать формулы */
 .one-list-item:nth-last-child(-n+2n) {
   visibility: 0;

@@ -10,7 +10,7 @@
     <header>
         <nav>
     <ul>
-        <li><a href="#">lifestyle</a> </li>
+        <li><a href="#">lifestyle</a></li>
         <li><a href="#">fotodiary</a></li>
         <li><a href="#">music</a></li>
         <li><a href="#">travel</a></li>
@@ -56,3 +56,148 @@
 
 </body>
 </html>
+
+
+.two-list {
+    list-style: none;
+    /*убирают зазоры, которые стоят по умолчанию */
+    /* Первое значение задает поле от верхнего края, второе — одновременно от левого и правого края, а третье — от нижнего края.*/
+    padding: 132px 0 0;
+    margin: 0;
+    font-size: 0;
+  }
+  
+  .two-list-item {
+    /* ставит все элементы секции в одну линию */
+    display: inline-block;
+    /* ширина одного элемента секции */
+    width: 420px;
+    /*зазор между элемннтами, которые входят в секцию */
+    margin-right: 60px;
+  }
+  
+  .two-list-fotodiarygit {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .two-list-title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .two-list-section {
+    margin: 0;
+  }
+  
+  .two-list-item:nth-child(2n) {
+  margin-right: 0;
+  }
+  
+  /* last для примера формулы, если элементов много */
+  .two-list-item:nth-last-child(- n + 2n) {
+    visibility: 0;
+  }
+  
+  .two-list-item h3 {
+    /* цвет шрифта*/
+    color: #dbd8d1;
+    /* расстояние между h3 и h4 (или p (текстом) */
+    margin-bottom: 24px;
+    /* размер шрифта 14х1.2=16.8 ~ 17px */
+    /* учитывает межстрочный интервал */
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .two-list-item h4 {
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .two-list-item p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .three-list {
+    list-style: none;
+    /*убирают зазоры, которые стоят по умолчанию */
+    padding: 132px 0 0;
+    margin: 0;
+    font-size: 0;
+  }
+  
+  .three-list-item {
+    /* ставит все элементы секции в одну линию */
+    display: inline-block;
+    /* ширина одного элемента секции */
+    width: 420px;
+    /*зазор между элемннтами, которые входят в секцию */
+    margin-right: 60px;
+  }
+  
+  .three-list-lifestyle {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .three-list-title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .three-list-section {
+    margin: 0;
+  }
+  
+  .three-list-item:nth-child(2n) {
+  margin-right: 0;
+  }
+  
+  /* last для примера формулы, если элементов много */
+  .three-list-item:nth-last-child(-n + 2n) {
+    visibility: 0;
+  }
+  
+  .three-list-item h3 {
+    /* цвет шрифта*/
+    color: #dbd8d1;
+    /* расстояние между h3 и h4 (или p (текстом) */
+    margin-bottom: 24px;
+    /* размер шрифта 14х1.2=16.8 ~ 17px */
+    /* учитывает межстрочный интервал */
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .three-list-item h4 {
+    /* расстояние между h4 и p (текстом) */
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .three-list-item p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  
+.load-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 164px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: 1px solid #626262; /* Параметры рамки */
+    font-weight: 400;
+    cursor: pointer;
+    }

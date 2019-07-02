@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+body {
+    padding-top: 63px;
+}
+    .container {
+        max-width: 960;
+        margin: 0 auto;
+ }
+
+.header {
+box-shadow: 0 10px 20px rgba(171, 112, 224, 0.59), 0 6px 6px rgba(0,0,0,0.23);
+padding: 10px 0;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 111;
+width: 100%;
+background: #fff;
+}
+
+.navigation-items {
+    font-size: 0;
+    text-align: center;
+    
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-link {
+    display: block;
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: gainsboro;
+    text-transform: uppercase;
+}
+
+.navigation-subitems {
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* display: none; */
+    visibility: hidden;
+}
+
+.nav-item:hover > .navigation-subitems {
+    /* display: block; */
+    visibility: visible;  
+      
+}
+
+.navigation-subitems {
+    padding: 10px 0;
+}
+
+.nav-subitem {
+    margin: 0 0 10px;
+}
+
+.nav-sublink {
+    font-size: 16px;
+    font-weight: normal;
+    min-height: 56px;
+    min-width: 160px;
+}
+
+.navigation-subitems-second {
+    transform: translateX(100%);
+    top: 0;
+    left: 0;
+    padding: 0 2px;
+}
+
+.first-section {
+    background: url('../img/17_3808.jpg');
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.first-section-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.first-sectoin-title {
+    font-size: 56px;
+}
+
+.first-section-description {
+    font-size: 32px;
+}
+
+/* modal */
+
+.modal-overlay {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0,0,0,0.73);
+z-index: 1111;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 200px;
+}
+
+.sticky {
+    max-width: 300px;
+    text-align: center;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.sticky-item {
+    font-size: 0;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.sticky-title {
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    font-size: 42px;
+    width: 20%;
+    margin-right: 10%;
+    vertical-align: top;
+}
+
+.sticky-text {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    width: 70%;
+    padding: 0 10px;
+    color: fuchsia;
+    text-align: justify;
+}

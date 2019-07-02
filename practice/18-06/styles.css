@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    counter-increment: count-titles;
+}
+
+.title::after {
+content: counter(count-titles, upper-roman)
+}
+
+.container {
+max-width: 960px;
+margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 
+First section 
+*/
+
+.first_section {
+  background-image: url(./img/vodopad-bigar-foto-1.jpg);
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0 0;
+}
+
+.first_title {
+    margin-bottom: 100px;
+}
+
+.first_section_text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Books store*/
+
+.books_item {
+    float: left;
+    width: 300px;
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.books_item:nth-of-type(odd) {
+    margin-right: 360px;
+}
+
+.books_item:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
+}
+
+/* 
+stores
+ */
+
+ .stores_section {
+    background-image: url(./img/vodopad-bigar-foto-1.jpg);
+      height: 700px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 0 0;
+  }
+
+ .stores_list {
+     max-width: 760px;
+     margin: 0 auto;
+     text-align: center;
+     counter-reset: count-box;
+ }
+
+ .stores_item {
+     width: 300px;
+     margin: 0 20px;
+     display: inline-block;
+     counter-increment: count-stores;
+ }
+
+ .stores_item::before {
+     content: counter(count-stores);
+ }
+
+ .center_text {
+     vertical-align: middle;
+     display: inline-block;
+     font-size: 20px;
+ }
+
+ .first_section_vertical {
+     filter: contrast(100%);
+     padding: 0;
+     font-size: 0;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .first_section_vertical::after {
+     content: '';
+     height: 100%;
+     width: 0;
+     display: inline-block;
+     vertical-align: middle;
+}
+
+.first_section_vertical_lh {
+    padding: 0;
+    line-height: 500px;
+}
+
+.stores_img {
+    background-image: url(./img/vodopad-bigar-foto-1.jpg);
+      height: 700px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 0 0;
+  }
+  
