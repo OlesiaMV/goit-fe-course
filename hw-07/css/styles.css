@@ -131,6 +131,10 @@ html {
      font-family: ;
  }
 
+ .header {
+   padding-top: 52px;
+ }
+
 
   .logo {
     color: #fed136;
@@ -148,7 +152,7 @@ html {
   
   .nav {
     display: flex;
-    min-height: 75px;
+    /* min-height: 75px; */
     align-items: flex-end;
     justify-content: space-between;
   }
@@ -183,6 +187,7 @@ html {
 
   .section-first {
       padding-top: 108px;
+      padding-bottom: 120px;
   }
   
   .text-first {
@@ -208,6 +213,7 @@ html {
     font-style: italic;
     font-weight: 400;
     color: #606060;
+    margin-bottom: 75px;
   }
 
   .amazing {
@@ -215,10 +221,7 @@ html {
     justify-content: space-between; 
     padding: 0;
     min-height: 196px;
-    /* align-content: space-between; */
     margin: 0;
-    padding-top: 75px;
-    margin-bottom: 120px;
   }
 
    .amazing-servises {
@@ -282,10 +285,10 @@ html {
     position: relative;
     background: url("../img/map.png");
     background-size: cover;
-    height: 680px;
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-bottom: 115px;
   }
 
   .sectoin-second {
