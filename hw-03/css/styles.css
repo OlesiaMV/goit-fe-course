@@ -20,8 +20,6 @@ box-sizing: border-box;
 .container {
   width: 900px;
   margin: 0 auto;
-
-/* убрать цвета */
   background-color: #ffffff;
 }
 
@@ -54,14 +52,6 @@ img {
 margin-right: 104px;
 }
 
-/*.site-navigation li:last-child {
-margin-right: 0;
-}
-/*   ИЛИ
-.site-navigation li: not (:last-child) {
-margin-right: 60px;
-{                            */
-
 .site-navigation a {
   text-align: center;
   color: #626262;
@@ -80,7 +70,7 @@ margin-right: 60px;
 }
 
 .list {
-  padding-bottom: 200px;
+  padding: 0;
 }
 
 .one-list {
@@ -89,7 +79,7 @@ margin-right: 60px;
   padding: 0;
   margin: 0;
   font-size: 0;
-  margin-bottom: 56px;
+  /* margin-bottom: 56px; */
 }
 
 .one-list-item {
@@ -99,6 +89,7 @@ margin-right: 60px;
   width: 420px;
   /*зазор между элемннтами, которые входят в секцию */
   margin-right: 60px;
+  margin-bottom: 138px; 
 }
 
 .one-list-image {
@@ -119,22 +110,17 @@ margin-right: 60px;
   margin: 0;
 }
 
-/*.one-list-section:nth-last-child(-n+2) {
-  margin-bottom: 120px;
-}
-*/
-
 .one-list-item:nth-child(2n) {
 margin-right: 0;
 }
 
+.one-list-item:nth-last-child(-n+2) {
+margin-bottom: 0;
+}
 
-
-  /* last для примера формулы, если элементов много */
-/* уточнить, как правильно записывать формулы */
 .one-list-item:nth-last-child(-n+2n) {
   visibility: 0;
-}
+} 
 
 .one-list-item h3 {
   /* цвет шрифта*/
@@ -146,8 +132,7 @@ margin-right: 0;
   line-height: 17px;
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
-  
+  text-transform: uppercase; 
 }
 
 .one-list-item h4 {
@@ -162,10 +147,9 @@ margin-right: 0;
   line-height: 24px;
 }
 
-
 .load-button {
   border: none;
-  margin: 0;
+  margin: 56px 380px 70px 360px;
   padding: 0;
   width: 164px;
   height: 60px;
