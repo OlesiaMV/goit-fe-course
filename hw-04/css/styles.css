@@ -20,16 +20,7 @@ html {
         margin: 0 auto;
         font-family: "Open Sans", sans-serif;
       }  
-      
-      /* убрать цвета 
-        background-color: gray;
-      }
-      
-      .page-header {
-        background-color:darkorchid;
-       */
-    
-      
+
       img {
         display: block;
         max-width: 100%;
@@ -80,17 +71,11 @@ html {
         .site-navigation li {
             float: left;
         }
-      /*  
-      .site-navigation li {
-        display: inline-block;
-      }
-         */  
-
+    
       .site-navigation li:not(:last-child) {
         margin-right: 20px;
       }
 
-      
       .site-navigation a {
         color: #0f0101;
         font-weight: 900;
@@ -127,8 +112,7 @@ html {
     margin: 0 auto;
     }
 
-
-      .sections {
+    .sections {
           color: #ffffff;
           text-transform: uppercase;
           font-weight: 900;
@@ -151,21 +135,7 @@ html {
       .sections-produkts:nth-child(4n){
         margin-right:0;
         }
-        
-
-      /* используем для виделения какого-то єлемента hover */
-      /*
-      .price1 {
-        background: linear-gradient(to right, #323232 75%,#8c8c8c 25%);
-      }
-      .sections-produktsa:hover .price1 {
-          background: #4ec6ab;
-      }*/
-
-      /* должен бить блок с названием спава и ценой слева + градиент, знак доллар перед ценой */
-
-      /* между рядами должно бить 30px */
-
+    
       .sections-produkts a: {
         display: block;
       }
@@ -177,14 +147,7 @@ html {
       .sections-produkts a:hover .price2 {
         background-color: #7fd9c7;
       }
-
       
-      /*.price1 {
-          width: 250px;
-          height: 40px;
-       background: linear-gradient(to right, #323232 75%,#8c8c8c 25%);
-       margin: 0;
-      }*/
       .price1 {
         width: 210px;
         height: 40px;
@@ -301,7 +264,7 @@ html {
     margin-top: 14px;
     padding-bottom: 50px;
     text-align: center; 
-    line-height: 50px:  
+    line-height: 50px;  
 }
 
 
