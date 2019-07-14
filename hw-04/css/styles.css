@@ -8,7 +8,7 @@ html {
       box-sizing: inherit;
     }
 
-    /* определить и добавить шрифт*/
+ 
     .body {
         color: #515151;
         font-size: 14px;  
@@ -33,14 +33,10 @@ html {
           clear: both;
       }
 
-
-      /*
       .page-nav {
-        padding: 78px 0 104px;
-        text-align: center;
+        height: 140px;
+        padding-top: 41px;
       }
-      */
-
 
       .logo {
         color: #8e8d8d;
@@ -94,10 +90,9 @@ html {
       
       .featured {
         font-size: 48px;
-        line-height: 32px;
+        line-height: 2;
         font-weight: 900;
         text-transform: uppercase;
-        line-height: 2;
         margin: 0;
         text-align: center;
         margin-bottom: 104px;
@@ -132,11 +127,11 @@ html {
         margin-bottom: 54px;
       }
 
-      .sections-produkts:nth-child(4n){
-        margin-right:0;
-        }
+      .sections-produkts:nth-child(4n) {
+        margin-right: 0;
+        } 
     
-      .sections-produkts a: {
+      .sections-produkts a {
         display: block;
       }
 
@@ -147,7 +142,7 @@ html {
       .sections-produkts a:hover .price2 {
         background-color: #7fd9c7;
       }
-      
+
       .price1 {
         width: 210px;
         height: 40px;
@@ -164,20 +159,19 @@ html {
         float: right;
       }
 
-      .sections-produkts::after {
+      /* .sections-produkts::after {
           content: "";
           display: block;
           color: #ffffff;
           margin-bottom: 30px; 
-        }
+        } */
 
         .news {
-          margin-bottom: 46px;
+          padding-bottom: 46px;
         }
 
      .latest-news {
          font-size: 48px;
-         line-height: 32px;
          font-weight: 900;
          text-align: center;
          text-transform: uppercase;
@@ -204,6 +198,7 @@ html {
         list-style: none;
         color: #555252; 
         padding: 0;
+        margin: 0;
       }
    
       .news-tekst {
