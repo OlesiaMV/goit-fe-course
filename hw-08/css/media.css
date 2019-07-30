@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+    .container {
+       width: 46.75rem;
+        margin: 0 auto;
+      }
+
+      .header {
+          background-image: url("../img/img_1-2.png");
+      }
+
+    .nav {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 37px 49px 141px 49px;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-content: flex-start;    
+    }
+
+    .photo {
+        position: relative; 
+         height: 43.75rem;
+         width: 48rem;
+    }
+        .logo {
+            display: flex;
+            align-content: flex-start;
+            padding-top: 10px;
+        }
+
+        .text-first {
+            display: flex;
+            padding: 0;
+            align-items: center;   
+        }
+
+        .text-second {
+            line-height: 63px;
+            font-size: 52px;
+            padding: 0 132px 30px;
+        }
+
+        .text {
+        line-height: 29px;
+        font-size: 24px;
+        padding: 0 0 30px;    
+        }
+
+        .button-second {
+            display: block;
+            width: 226px;
+            margin: 0 auto;  
+        }
+
+        .section-second {
+            padding-top: 70px;
+            width: 492px;
+            margin: 0 auto;
+        }
+
+        .team-section {
+            display: flex; 
+            flex-wrap: wrap;
+                  }
+
+        .text-three {
+            padding-bottom: 30px;
+        }
+ 
+        .one {
+            order: 1;
+        }
+
+        .two {
+            order: 3;
+        }
+
+        .three {
+            order: 2;
+        }
+
+        .four {
+            order: 4;
+       }  
+
+    .team {
+        flex: 0 0 236px;
+        margin-bottom: 55px;
+        }  
+
+        .team:nth-child(even) {
+            margin-bottom: 0;
+        }
+
+        .button-three {
+            margin: 38px 0;
+        }
+    }
+  
+
+    @media (min-width: 942px) {
+        .container {
+            width: 942px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-image: url("../img/img_1-4.png");
+        }
+
+        .nav {
+            padding: 37px 0 142px;
+          }
+      
+          .photo {
+               height: 700px;
+               width: 1440px;
+          }
+            
+              .text-second {
+                  padding: 0 215px 30px;
+              }
+      
+        .section-second {
+        
+            width: 942px;
+            margin: 0 auto;
+        }
+
+        .team {
+            flex: 0 0 220px;
+            margin-bottom: 36px;
+        }  
+
+         .button-three {
+            margin-bottom: 70px;
+     }
+  
+    }
