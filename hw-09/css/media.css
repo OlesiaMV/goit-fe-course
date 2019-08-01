@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
     .container {
-       width: 46.75rem;
+       width: 768px;
         margin: 0 auto;
       }
 
@@ -8,11 +8,8 @@
           background-image: url("../img/img_1-2.png");
       }
 
-    .nav {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      padding: 37px 49px 141px 49px;
+     .nav {
+   padding-top: 37px; 
     }
 
     .nav-logo {
@@ -22,8 +19,8 @@
 
     .photo {
         position: relative; 
-         height: 43.75rem;
-         width: 48rem;
+         height: 700px;
+         width: 768px;
     }
         .logo {
             display: flex;
@@ -34,13 +31,13 @@
         .text-first {
             display: flex;
             padding: 0;
-            align-items: center;   
+            align-items: center;  
         }
 
         .text-second {
             line-height: 63px;
             font-size: 52px;
-            padding: 0 132px 30px;
+            padding-top: 145px; 
         }
 
         .text {
@@ -57,7 +54,6 @@
 
         .section-second {
             padding-top: 70px;
-            width: 492px;
             margin: 0 auto;
         }
 
@@ -96,14 +92,15 @@
         }
 
         .button-three {
+    width: 190px;
             margin: 38px 0;
         }
     }
-  
+   
 
-    @media (min-width: 940px) {
+    @media (min-width: 992px) {
         .container {
-            width: 940px;
+            width: 992px;
             margin: 0 auto;
         }
 
@@ -111,22 +108,12 @@
             background-image: url("../img/img_1-4.png");
         }
 
-        .nav {
-            padding: 37px 0 140px;
-          }
-      
           .photo {
                height: 700px;
 
           }
-            
-              .text-second {
-                  padding: 0 215px 30px;
-              }
-      
-        .section-second {
         
-            width: 940px;
+        .section-second {  
             margin: 0 auto;
         }
 

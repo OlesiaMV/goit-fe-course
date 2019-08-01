@@ -106,14 +106,13 @@ html {
   }
 
   .container {
-    width: 320px;
+    width: 290px;
     margin: 0 auto;
   }
 
 .photo {
  position: relative; 
   height: 540px;
-  width: 320px;
   margin: 0;
   padding: 0;
   color: #ffffff;
@@ -142,9 +141,9 @@ html {
 }
 
 .nav {
-   display: block;
+   display: flex;
    margin: 0;
-    padding: 20px 78px 0 78px; 
+    padding-top: 20px;
 }
 
 .text-first {
@@ -162,7 +161,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 36px;
-    font-size: 30px;
+    font-size: 29px;
     padding-bottom: 14px;
     text-transform: uppercase;
     text-align: center;
@@ -176,7 +175,7 @@ html {
     font-size: 18px;
     text-align: center;
     margin: 0; 
-    padding: 0 50px;
+    padding: 0;
     padding-bottom: 17px;
 }
 
@@ -193,12 +192,11 @@ html {
     cursor: pointer;
     text-align: center;
     padding: 0;
-    margin-left: 20px;
+   
 }
 
 .section-second {
-    padding-top: 77px;
-    width: 320px; 
+    padding-top: 65px;
     text-align: center;      
 }
 
@@ -206,8 +204,8 @@ html {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    line-height: 27px;
-    font-size: 22px;
+    line-height: 26px;
+    font-size: 21px;
     padding-bottom: 17px;
     text-align: center;
     margin: 0; 
@@ -220,7 +218,6 @@ html {
 .team {
     list-style: none;
     padding: 0;
-    width: 236px;
     margin: 0 auto;
      margin-bottom: 27px;
 }
@@ -304,19 +301,19 @@ html {
 }
 
 .button-three {
-    color: #ff4e50;
-font-size: 14px;
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
-border-radius: 20px;
-width: 280px;
-height: 40px;
-cursor: pointer;
-text-align: center;
-padding: 0;
-border: 1px solid #ff4e50;
-background-color: #ffffff;
-margin-bottom: 46px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+ width: 280px;
+  height: 40px;
+  background-color: #ff4e50;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 46px;
 }
 
 
